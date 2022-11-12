@@ -1,0 +1,65 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Styling a SignUp Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="signupFrm">
+    <div class="wrapper">
+    <form action="" class="form">
+
+      <p class="title"> Regístrese aquí </p>
+    
+
+  
+      <div class="inputContainer">
+        <input type="text" class="input" placeholder="a" id="name">
+        <label for="" class="label">Nombre<abbr title="dato requerido" aria-label="required">*</abbr></label>
+      </div>
+
+      <div class="inputContainer">
+      <input type="text" class="input" placeholder="a">
+      <label for="" class="label">Apellido<abbr title="dato requerido" aria-label="required">*</abbr></label>
+    </div>
+<!-- La Dirección de Correo Electrónico se tomará como usuario, ya que es un dato único del cliente -->
+      <div class="inputContainer">
+      <input type="email" class="input" placeholder="a" id="email">
+      <label for="" class="label">Email<abbr title="dato requerido" aria-label="required">*</abbr></label>
+    </div>
+
+    <div class="inputContainer">
+    <input type="number" class="input" placeholder="a">
+    <label for="" class="label">Celular<abbr title="dato requerido" aria-label="required">*</abbr></label>
+  </div>
+
+      <div class="inputContainer">
+        <input type="password" class="input" placeholder="a" id="pass">
+        <label for="" class="label">Contraseña <abbr title="dato requerido" aria-label="required">*</abbr></label>
+      </div>
+
+      <div class="inputContainer">
+        <input type="password" class="input" placeholder="a">
+        <label for="" class="label">Confirmar contraseña <abbr title="dato requerido" aria-label="required">*</abbr></label>
+      </div>
+      <p>Complete correctamente los campos marcados <abbr title = "required">*</abbr>.</p>
+      <input type="submit" class="submitBtn" value="Registrarse" onclick="validar();">
+
+    </form>
+    </div>
+  </div>
+  
+  <script src="valida.js"></script>
+  <script>
+  function activateSend() {
+      document.getElementById("enviar").disabled = false;
+  }</script>
+  
+</body>
+
+</html>
